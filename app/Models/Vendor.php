@@ -24,4 +24,9 @@ class Vendor extends Model
         'contract_signed',
         'note',
     ];
+
+    public function budget()
+    {
+        return $this->hasMany(Budget::class);
+    }
 }
